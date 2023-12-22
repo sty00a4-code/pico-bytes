@@ -264,8 +264,8 @@ impl TryFrom<Bytes> for ByteCode {
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct Program {
-    strings: Vec<String>,
-    code: Vec<ByteCode>,
+    pub strings: Vec<String>,
+    pub code: Vec<ByteCode>,
 }
 #[derive(Debug, Clone, PartialEq)]
 pub enum ProgramParseError {
